@@ -1,0 +1,21 @@
+<!-- index.html -->
+<html>
+    <body>
+        <div id="app"></div>        <!--giving div a unique id to call later-->
+        <script type = "text/javascript">    
+        // starting JS session from here
+        // select <div> element app                     
+            const app = document.getElementById('app');  
+        // Create a new H1 element
+            const header = document.createElement('h1');
+        // Create new text node for the H1 element
+            const headerContent = document.createTextNode(
+                'Develop, Preview, Ship'
+            )    
+        // Append the text to h1 element
+            header.appendChild(headerContent)
+        // Place the h1 inside the <div>
+            app.appendChild(header)
+        </script>  <!--staring javascript-->  <!--calling div in DOM-->
+    </body>
+</html>
